@@ -116,7 +116,7 @@ function gameOver(a) {
 }
 
 function draw() {
-    var drawAlertElement = "<b> EMPATOU !!!</b><br><br>" + restartButton;
+    var drawAlertElement = "<b> EMPATOU !!!</b><br><br> Clique no botão para reniciar " + restartButton;
 
     var div = document.createElement("div");
     div.className = "alert";
