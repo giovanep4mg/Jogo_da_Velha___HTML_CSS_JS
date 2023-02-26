@@ -1,0 +1,153 @@
+/* Corpo da página */
+
+html {
+    background-image: url("jogo\ da\ velha.png");
+    background-size: 4%;
+    background-position-x: 200px;
+
+
+}
+
+.jogoTodo {
+
+    background-color: rgba(179, 62, 62, 0.282);
+    background-image: url("por-que-o-jogo-da-velha-tem-esse-nome.webp");
+    background-position-x: -300px;
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background-color: ghostwhite;
+    color: dimgray;
+    font-family: serif;
+    align-items: center;
+}
+
+/* titulo  */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7rem;
+    text-align: center;
+
+    color: rgba(13, 13, 14, 0.713);
+    text-decoration: underline;
+
+}
+
+/*     */
+#container {
+
+    border-radius: 15px;
+    text-align: center;
+    border: 5px solid rgba(29, 87, 233, 0.601);
+
+    margin-left: 500px;
+    margin-right: 500px;
+
+    background-color: ghostwhite;
+}
+
+/*   */
+.box {
+    display: inline-block;
+    border: 2px solid rgba(210, 57, 57, 0.524);
+    width: 129px;
+    height: 130px;
+
+    box-sizing: border-box;
+
+
+}
+
+/*     */
+span {
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+/*     */
+.top {
+    border-top: none;
+}
+
+/*     */
+button {
+    border-bottom: none;
+}
+
+/*    */
+.left {
+    border-left: none;
+}
+
+/*    */
+.right {
+    border-right: none;
+}
+
+/*    */
+.alert {
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+/*     */
+button {
+    background: dimgray;
+    border-radius: 2px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+
+}
+
+/*     */
+button :focus {
+    background: silver;
+
+}
+
+/*   */
+activeBox {
+    background: silver;
+}
+
+/*    */
+@keyframes larger {
+
+    /*      */
+    from {
+        height: 75px;
+        width: 125px;
+    }
+
+    /*     */
+    to {
+        height: 100px;
+        width: 200px;
+    }
+
+
+}
