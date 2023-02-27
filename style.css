@@ -1,6 +1,7 @@
 /* Corpo da página */
 
 html {
+    position: relative;
     background-image: url("jogo\ da\ velha.png");
     background-size: 4%;
 
@@ -11,10 +12,17 @@ html {
 
 
 body {
-    background-color: ghostwhite;
-    color: dimgray;
+    color: rgb(11, 10, 10);
     font-family: serif;
     align-items: center;
+
+    background-image: url("duasVelhas.png");
+    background-size: 100%;
+
+    background-position-y: -65px;
+
+    background-repeat: repeat-y;
+    position: relative;
 }
 
 /* titulo  */
@@ -39,16 +47,17 @@ h1 {
 /*   */
 .box {
     display: inline-block;
-    border: 2px solid rgba(124, 122, 122, 0.524);
+    border: 2px solid rgba(27, 26, 26, 0.983);
     width: 100px;
     height: 100px;
     text-align: center;
     box-sizing: border-box;
     padding: 0;
+    position: relative;
 
 }
 
-/*     */
+/* os "x" e "o"    */
 span {
     position: absolute;
     font-size: 75px;
@@ -81,7 +90,7 @@ button {
     border-right: none;
 }
 
-/*    */
+/*  tela de aviso de quem ganhou    */
 .alert {
     height: 75px;
     width: 125px;
